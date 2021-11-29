@@ -1,0 +1,21 @@
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #e2edff;
+}
+#galery {
+  background-color: #e2edff;
+}
+section {
+  padding-top: 5rem;
+}
+#navbarNav {
+  width: 100vw;
+  padding-left: 90px;
+}
+body {
+  font-family: "Helvetica";
+  font-size: 18px;
+}
+.abs {
+  text-align: justify;
+}

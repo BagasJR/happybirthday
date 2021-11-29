@@ -1,0 +1,163 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Tampilan Awal</title>
+  <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
+  <meta name="description" content="Super easy to implement HTML5 fullscreen background video library in JavaScript.">
+
+  <style>
+    * {
+      margin: 0; padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #container {
+      overflow: hidden;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+    #background_video {
+      position: absolute;
+
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+
+      object-fit: cover;
+      height: 100%; width: 100%;
+    }
+
+    #video_cover {
+      position: absolute;
+
+      width: 100%; height: 100%;
+
+      background: url('home/asset/video_cover.jpeg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #video_controls {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    #play img {
+      width: 100px;
+    }
+    #pause img {
+      width: 90px;
+    }
+    #pause {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      #video_controls {
+        display: none;
+      }
+    }
+
+    /* Demo page specific styles */
+
+    body {
+      text-align: center;
+      font-family: 'proxima-nova', Helvetica;
+      background-image: linear-gradient(to right, #0000FF, #1E90FF, #00BFFF);
+    } 
+    #container {
+      height: 100%;
+    }
+
+    #overlay {
+      position: absolute;
+      top: 0; right: 0; left: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+
+    #main_content {
+      z-index: 2;
+      position: relative;
+      display: inline-block;
+
+      /* Vertical center */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #main_content h1 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: 'proxima-nova-condensed', Helvetica;
+      color: black;
+      font-size: 35px;
+    }
+
+    #main_content .sub_head {
+      color: black;
+      font-size: 18px;
+    }
+
+    #main_content .info {
+      color: black;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    #links {
+      margin-top: 50px;
+    }
+
+    #links a {
+      border: 3px solid #D2691E;
+      border-radius: 61px;
+      width: 80px;
+      font-size: 13px;
+      height: auto;
+      color: black;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px 25px;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+  </style>
+
+  <script src="https://use.typekit.net/nlq1kdt.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d2691e" fill-opacity="1" d="M0,96L24,101.3C48,107,96,117,144,112C192,107,240,85,288,106.7C336,128,384,192,432,192C480,192,528,128,576,90.7C624,53,672,43,720,48C768,53,816,75,864,112C912,149,960,203,1008,186.7C1056,171,1104,85,1152,74.7C1200,64,1248,128,1296,144C1344,160,1392,128,1416,112L1440,96L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>  
+  <div id="container">
+    <section id="main_content">
+      <div id="head">
+        <h1>Bideo.js</h1>
+        <p class="sub_head">Yahh salahh jawabannyaa cobaa jawabb lagi sampee benerr hayoo... Semangattt😂😊😜</p>
+      </div>
+      
+      <div id="links">
+        <a href="index 1.html">Back</a>
+      </div>
+    </section>
+  </div>
+
+  <script src="bideo.js"></script>
+  <script src="main.js"></script>
+
+  <script>
+    if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
+      window.location.protocol = "https";
+    }
+  </script>
+</body>
+</html>
